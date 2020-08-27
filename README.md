@@ -1,2 +1,2 @@
-# sinzero-ai.github.io
-博客
+# 博客地址:
+sinzero-ai.github.io
