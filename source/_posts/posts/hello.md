@@ -1,6 +1,6 @@
 ---
-title: 你好世界
-url: hello_url
+标题：样本
+网址：hello_url
 tags:
   - 标签1
   - 标签2
@@ -10,9 +10,9 @@ categories:
 date: 2020-05-08 20:03:00
 ---
 # 你好
-世界
+来访者
 
 <!-- more -->
-这是阅读全文
+这是永无乡
 
 {% img /images/404.jpg %}
