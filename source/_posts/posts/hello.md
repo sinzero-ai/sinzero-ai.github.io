@@ -2,12 +2,10 @@
 标题：样本
 网址：hello_url
 tags:
-  - 标签1
-  - 标签2
+  - program
 categories:
-  - 分类1
-  - 分类2
-date: 2020-05-08 20:03:00
+  - settings
+date: 2020-08-28 10:03:00
 ---
 # 你好
 来访者
