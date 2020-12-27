@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/config/favicon-32x32-next.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/config/favicon-16x16-next.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Consolas:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sinzero-ai.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":true,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="呐，你知道幸运是什么吗？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="幸运悖论">
+<meta property="og:url" content="http://sinzero-ai.github.io/posts/%E5%B9%B8%E8%BF%90%E6%82%96%E8%AE%BA_url.html">
+<meta property="og:site_name" content="sinzero-ai">
+<meta property="og:description" content="呐，你知道幸运是什么吗？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-04T15:31:00.000Z">
+<meta property="article:modified_time" content="2020-12-27T02:01:26.717Z">
+<meta property="article:author" content="sinzero-ai">
+<meta property="article:tag" content="art">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://sinzero-ai.github.io/posts/%E5%B9%B8%E8%BF%90%E6%82%96%E8%AE%BA_url.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>幸运悖论 | sinzero-ai</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss.xml" title="sinzero-ai" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">sinzero-ai</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">sinzero-ai</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">6</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/sinzero-ai" class="github-corner" title="我的Github" aria-label="我的Github" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://sinzero-ai.github.io/posts/%E5%B9%B8%E8%BF%90%E6%82%96%E8%AE%BA_url.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/config/avatar.jpg">
+      <meta itemprop="name" content="sinzero-ai">
+      <meta itemprop="description" content="sinzero-ai">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sinzero-ai">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          幸运悖论<a href="https://github.com/sinzero-ai/sinzero-ai.github.io/blob/source/source/_posts/_posts/posts/2020-09-04-幸运悖论.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-04 23:31:00" itemprop="dateCreated datePublished" datetime="2020-09-04T23:31:00+08:00">2020-09-04</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/frandom/" itemprop="url" rel="index"><span itemprop="name">frandom</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>呐，你知道幸运是什么吗？</p>
+<a id="more"></a>
+
+<p> 有人说，幸运就是好运气，它代表着欢乐，成功，美满这类积极的事物，幸运的人总能轻易达成其他人苦苦追求的成就，不知忧愁地幸福着。</p>
+<p> 啊啊，听起来真美好呢，不过像我这样的渣滓果然不应该对幸运怀有什么期待吧，因为对我而言，幸运似乎要收取极大的代价才肯屈尊降临。</p>
+<p> 诶，这样还叫幸运吗？</p>
+<p> 抱歉，我也不太清楚呢，姑且被许多人这样叫过就是了。</p>
+<p> 不过，你说的话很有道理呢——</p>
+<p> 这样还能叫幸运么？</p>
+<p> 狛枝凪斗有些无力地扬了扬嘴角，连续三天的缺水已经使他的唇干裂出血，可绑匪依旧没有给他吃喝的意思。</p>
+<p> 这样可撑不了多久啊，他漫无目的地想着，说起来，这是第三十八次遇到危及生命的不幸了吧，明明才12岁而已。</p>
+<p> 虽说不幸后必然会发生与之对等的幸运就是了。</p>
+<p> 窄小的密闭房间一片漆黑，只透过铁栅窗探进几分缥缈的月光，外面杳然的天宇被机械地切割开，照例冷淡地静默着。</p>
+<p> 这次我会死去吗？一股奇异的冲动随着这个想法窜过背脊，他闭了闭眼，又郑重其事地睁开，抑制住身体下意识的颤抖。可这好像并不太管用，略显急躁地抓拂着地面，他说不出是舒适还是烦恼地叹了口气，任凭脑内的眩晕感不依不饶地蔓延上来。</p>
+<p> 他看见笼在月光里的几只红蜘蛛，细小地漂浮在灰墙表面，足肢流畅而凛冽，一幅悠然自得的模样。它们会织网么？上一次看见蛛网时还是郊游，清晨的浅间山云烟缭绕，自己不慎滑倒跌进灌丛，被惊慌失措的蜘蛛咬了一口，那张蛛网也碎裂在手臂上，湿漉漉的。</p>
+<p> 说起来，蜘蛛咬人真痛呢，他滞重地往后缩了缩，医生说园蛛毒性不大，这孩子挺幸运的。我会死吗？肯定不会的，有红蜘蛛的话，这附近应该是乡村吧，匪徒会死吗？不，孩子，别害怕，劫匪已经死掉了，看，这是警徽，你还能说出自己的名字吗？</p>
+<p> 狛枝凪斗，我叫狛枝凪斗。</p>
+<p> 你家在哪里？或者有亲戚在东京吗？</p>
+<p> 我住在千叶市。</p>
+<p> 巨大的恐慌攥住心脏，他不由得尖叫出声，泪珠大颗大颗地涌出眼眶。</p>
+<p> 谁在尖叫啊，好吵。</p>
+<p> 恍惚中，他再次看见墙上的红蜘蛛，这次多了几张纤弱的蛛网悬挂在角落，它们孜孜不倦地忙碌着。</p>
+<p> 窗外有高亢的尖叫声，坚决又断续地跨越死寂回响不休。</p>
+<p> 原来是警笛啊，他躺在地板上听门外绑匪骤然慌乱起来的动静，低低哼笑出声。</p>
+<p> 呐，你知道什么是幸运吗？</p>
+<p> 门被砰地一声打开，有人狠狠提起他的衣领，动作迅速地解开链铐，随即刀刃抵上了脖颈。</p>
+<p> 他只是安静地垂下头，继续饶有兴致地瞥向墙角蛛网。</p>
+<p> 对我而言，幸运就是如同蛛网一样的东西吧，从出生那刻起就死死缠绕在身上，无论如何都挣脱不得。</p>
+<p> 被强硬拖曳着奔逃，却在约莫十分钟后就迎面撞上正在搜寻的警队。</p>
+<p> 无论是用以交换的不幸，还是世人艳羡的幸运，谁都撼动不得。</p>
+<p> 仿佛终于发现拿成了起锈的旧刀，绑匪暗骂一声，想要将用以对抗警察的手枪抵上他的脑门。</p>
+<p> 说是命运的恶意也不为过，因为很少有人能够反抗命运，不是么？</p>
+<p> 绑匪的动作忽然静止了，随即身后响起重物坠地声。</p>
+<p> 我啊，从那场遭遇劫匪的空难里用失去双亲的代价交换身为唯一存活者的幸运后，就一直在想……</p>
+<p> 身侧林木后闪出几个警察，飞快地上前护住他，原先的警队冲上前去追捕后面的同伙。</p>
+<p> 这世界上究竟有没有什么存在，能够打破我这混乱的宿命，或者说，能让我摆脱这样的人生？</p>
+<p> 这样一目了然的，绝对的不幸与幸运导致的，没有任何期待的人生。</p>
+<p> 我能够去希望吗？或者说，我希望的正是希望本身吧。</p>
+<p> “接下来的时间就去做自己想做的所有事吧。”戴平光镜的男医生低着头避免与我对视，只机械地将检查报告单翻开又合上，“运气好的话，可以多坚持一段时间也说不定。”</p>
+<p> “一点治疗方案也没有吗？”我问道，他的手颤了颤，也许是被我语调中的喜悦吓到了吧，但这也没有办法啊。</p>
+<p> 我低头捂住胸口，旁若无人地享受着心脏每一下跳动扩散到四肢百骸的，电流般麻痒的酥软感，迷乱得简直想要喟叹出声。</p>
+<p> 我能去死吗，我会死去吗？难道命运终于眷顾我一次，愿意将这所谓的幸运从身上剥离，不再遵从我无意识或下意识的目的——在尚未触及希望之前，我可不愿死去啊这样的想法。</p>
+<p> 就这样怀抱着死期未知的胆战心惊活下去，在轮回被打破的世界里渴求能够再拥有一天正常人的生活，又因为不确定而拼命努力着……</p>
+<p> 又或许……这就是希望呢？</p>
+<p> 究竟是不幸，还是幸运？</p>
+<p> 正兀自入神地陷进沉思里，对面的人却突然开口了：“也不是完全没有办法。”</p>
+<p> “哈？”我的心开始沉沉下坠，充满敌意地望向他。</p>
+<p> “你知道希望之峰学园吗？”他丝毫不在意我可怕的表情，自顾自说道，“如果能被录取的话，我想是有救的，毕竟那里有很多先进的设备和资源，还有一批超高校级的专家学者。”</p>
+<p> 希望之峰啊，真是幸运呢。我冲医生懒散地笑笑，起身告辞。</p>
+<p> 果然我这种人能反抗命运还是太不自量力了，拜幸运所赐，这样的垃圾居然还将去玷污那座学园里被重点培育的各界人才——闪闪发光的“希望”们。</p>
+<p> 胸腔中又泛起一股炽热洪流，像沸水中的气泡般咕噜咕噜地吵闹着，在脑海汇集成空茫杂音，让人感觉置身于极高的风口。我不为所动地站在风口里。</p>
+<p> 啊啊，其实我很喜欢风，要是有空闲，一定会好好品味这种类似的感觉，可惜现在有莫名在意的事……会以什么身份入学呢？</p>
+<p> 过往碌碌无为的人生里，唯一受人认可的，也就只有幸运了吧，好惭愧。</p>
+<p> 那可是希望之峰学园，多少人朝思暮想的圣地，走向成功的港湾，他们愿意为之付出无数汗水和代价，而我从小到大甚至都没有奋斗过。</p>
+<p> 就这样惋惜的时候，突然有什么如同刀锋一般异常鲜明地划过脑海，带着颤栗的痛感，让我不由得恍惚了一下——那么，如果是这些人，这些拥有坚定目标并为之奋斗，跨越黑暗与绝望挣扎而上，成为超高校级的人，他们是否能够击破所谓的命运，用闪耀且不可违逆的希望，来化解我的绝对幸运呢？</p>
+<p> 有刺耳沙哑的奇怪声音从嘴角溢出，像漫长的电流，从空气窜入神经，最终化为真实的知觉——我笑得歇斯底里。</p>
+<p> 会有吗？怎么可能啊，像我这样不幸，作为渣滓去妄想希望们的垂青，听起来就好糟糕啊，被当做垫脚石就已经诚惶诚恐。他们真的是希望吗？</p>
+<p> 还是说，我能成为希望……</p>
+<p> 啊啊，会有怎样的幸运才能导致这样渺小的可能性，或者不幸……</p>
+<p> 但它们应该不存在了才对吧。</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>坚持原创分享，您的支持将鼓励我继续创作!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/config/wechatpay.jpg" alt="sinzero-ai 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/config/alipay.jpg" alt="sinzero-ai 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>sinzero-ai
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://sinzero-ai.github.io/posts/%E5%B9%B8%E8%BF%90%E6%82%96%E8%AE%BA_url.html" title="幸运悖论">http://sinzero-ai.github.io/posts/幸运悖论_url.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/art/" rel="tag"># art</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/%E8%84%91%E5%86%85%E5%A6%84%E6%83%B3%E6%9B%B2_url.html" rel="prev" title="脑内妄想曲">
+      <i class="fa fa-chevron-left"></i> 脑内妄想曲
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/%E8%B1%A1%E7%89%99%E5%A1%94_url.html" rel="next" title="象牙塔">
+      象牙塔 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="sinzero-ai"
+      src="/images/config/avatar.jpg">
+  <p class="site-author-name" itemprop="name">sinzero-ai</p>
+  <div class="site-description" itemprop="description">sinzero-ai</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sinzero-ai" title="GitHub → https://github.com/sinzero-ai" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://blog.ahao.moe" title="http://blog.ahao.moe" rel="noopener" target="_blank">Ahaochan</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sinzero-ai</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">12k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">23 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'http://sinzero-ai.github.io/posts/%E5%B9%B8%E8%BF%90%E6%82%96%E8%AE%BA_url.html',]
+      });
+      });
+  </script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '8d52829d4e3272b1a748',
+      clientSecret: '42de7fe4009bfb3f16058c86a28a26f6e07290ed',
+      repo        : 'sinzero-ai.github.io',
+      owner       : 'sinzero-ai',
+      admin       : ['sinzero-ai'],
+      id          : 'e6d7a05543d73f64493946521176d13e',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1.2,"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7},"log":false});</script></body>
+</html>
